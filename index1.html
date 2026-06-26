@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platon</title>
+</head>
+<body>
+    <div>
+        <img id="Image" src="" width="600" height="550">
+        <div id="capiton"></div>
+        <button id="prev">Предыдущий</button>
+        <button id="next">Следующий</button>
+    </div>
+
+    <script>
+        const images=[
+            "1.jpg",
+            "2.jpg",
+            "3.jpg"
+        ]
+        let current = 0;
+
+        const img = document.getElementById("Image")
+        const prev = document.getElementById("prev")
+        const next = document.getElementById("next")
+
+        
+        function showImage(i) {
+            if (i < 0) i = images.length - 1;
+            if (i >= images.length) i = 0;
+            current = i;
+            img.src = images[current];
+        }
+        prev.onclick = () => showImage(current - 1);
+        next.onclick = () => showImage(current + 1);
+        showImage(current);
+    </script>
+
+
+</body>
+</html>

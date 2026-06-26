@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0px;
+    background: rgba(250, 250, 248, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(116, 23, 229, 0.08);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.orderbutton {
+    background-color: rgb(176, 119, 241);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    white-space: nowrap;
+}
+
+li {
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.main-dog {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    background-color: rgb(241, 241, 241);
+    padding: 40px 20px;
+}
+
+.order {
+    text-decoration: none;
+    background-color: rgb(255, 153, 0);
+    border-radius: 50px;
+    color: white;
+    padding: 12px 30px;
+    font-size: 23px;
+    font-family: 'Montserrat';
+    display: inline-block;
+}
+
+.main h1 {
+    max-width: 600px;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.main p {
+    max-width: 600px;
+    font-size: 40px;
+}
+
+.YSLYGI {
+    font-size: 25px;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgba(172, 252, 255, 0.342);
+    border-radius: 50px;
+    padding: 40px 20px;
+    margin: 20px;
+}
+
+.main-dog2 {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: rgb(160, 89, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-family: Montserrat;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer h2 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.footer p {
+    font-weight: 200;
+}
+
+.main-dog3 {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+.Platon {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: Montserrat;
+    font-size: 20px;
+    padding: 40px 20px;
+}
+
+.adv img {
+    width: 100px;
+    height: auto;
+}
+
+.adv {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 20px;
+}
+
+.adv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.adv p {
+    font-size: 25px;
+    font-family: Montserrat;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .nav-container {
+        gap: 20px;
+    }
+    ul {
+        gap: 20px;
+    }
+    li, .orderbutton {
+        font-size: 16px;
+    }
+    .main h1 {
+        font-size: 36px;
+    }
+    .main p {
+        font-size: 28px;
+    }
+    .main {
+        gap: 20px;
+    }
+    .adv {
+        gap: 40px;
+    }
+    .adv p {
+        font-size: 20px;
+    }
+    .YSLYGI {
+        gap: 40px;
+        font-size: 20px;
+    }
+    .main-dog2 {
+        width: 250px;
+    }
+    .footer {
+        gap: 50px;
+    }
+    .Platon {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .main {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main-dog {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .main h1, .main p {
+        width: 100%;
+    }
+    .adv {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .YSLYGI {
+        flex-direction: column;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .main-dog2 {
+        margin: 0 auto;
+        width: 200px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .Platon {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+    .main-dog3 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h1 {
+        font-size: 28px;
+    }
+    .main p {
+        font-size: 20px;
+    }
+    .order {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .adv p {
+        font-size: 18px;
+    }
+    .YSLYGI {
+        font-size: 18px;
+        margin: 10px;
+    }
+    .footer h2 {
+        font-size: 22px;
+    }
+    .main-dog3 {
+        width: 80%;
+    }
+}
